@@ -1,0 +1,192 @@
+<html><head>
+    <title>Vein Lang</title>
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+    <link rel="icon" type="image/png" href="img/vein-icon.png">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <style>
+      body {
+        background-color: white;
+        font-family: 'Roboto';
+        color: rgb(77, 77, 77);
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+      }
+  
+      body > * {
+        padding: 10px;
+      }
+  
+      h1, h2, h3 {
+        font-family: 'Roboto';
+      }
+  
+      h2 {
+        font-weight: 300;
+        font-size: 26px;
+        margin-bottom: 20px;
+      }
+  
+      h3 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+  
+      a, a:visited, a:active {
+        color: #c4953a;
+      }
+  
+        a.button {
+          text-transform: uppercase;
+          padding: 10px 20px;
+          border: 1px solid;
+          color: #1d222d;
+          margin-bottom: 10px;
+          font-size: 1.2em;
+          font-weight: 300;
+          width: 100%;
+          display: block;
+        }
+  
+          a.button:hover {
+            text-decoration: none;
+            background-color: rgba(0,0,0,0.1);
+          }
+  
+      pre {
+        background-color: white;
+        line-height: inherit;
+        color: black;
+        border: none;
+        border-radius: 0;
+      }
+  
+        pre span.k {
+          color: black;
+          font-weight: bold;
+        }
+  
+        pre span.s {
+          color: #c4953a;
+          font-weight: bold;
+        }
+  
+        pre span.n {
+          color: #445588;
+          font-weight: bold;
+        }
+        pre span.c {
+          color: #448858;
+          font-weight: bold;
+        }
+  
+      p code {
+        color: black;
+        background-color: #f6f2eb;
+      }
+  
+      header {
+        background-color: #24090c;
+        padding: 15px 0;
+        color: white;
+      }
+  
+      header img {
+        width: 350px;
+      }
+  
+      .container {
+        padding: 25px 0;
+      }
+  
+      section.dark {
+        background-color: #f5f5f5;
+      }
+  
+      footer a, footer a:visited, footer a:active {
+        font-size: 2em;
+        color: #1d222d;
+      }
+  
+      footer a:hover {
+        color: #c4953a;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <div class="container text-center">
+        <img src="img/vein-poster.png" alt="VeinLang">
+      </div>
+      <h2 class="text-center">
+        A open source high-level strictly-typed programming language with a support standalone OS, 
+        arm and quantum computing support.
+      </h2>
+    </header>
+    <section class="dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Benefits</h3>
+  
+            <ul>
+              <li>Free. Cross-platform. Open source.</li>
+              <li>Cross-platform standard library.</li>
+              <li>Machine Learning: Add vision algorithms, speech processing, predictive models, and more to your apps.﹡</li>
+              <li>Internet of Things: Build IoT applications for your devices and sensors with Vein.﹡</li>
+              <li>Quantum: Develop quantum operations, run programs in simulators.﹡</li>
+              <li>CLI: Write better scripts and console applications.﹡</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3>Hello, VeinLang!</h3>
+  
+            <pre>
+<span class="k">#use</span> <span class="s">"vein/lang"</span>
+<span class="k">#space</span> <span class="s">"hello_world"</span>
+
+<span class="n">public</span> <span class="n">greet()</span>: <span class="c">String</span> {
+    <span class="n">return</span> <span class="s">"Hello, "</span>;
+}
+<span class="n">internal</span> <span class="n">master()</span>: <span class="c">Void</span> {
+    <span class="c">Out</span>.<span class="k">println</span>(<span class="k">greet</span>(), <span class="s">"World"</span>);
+}
+            </pre>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-3 text-center">
+            <a href="http://book.vein-lang.org/docs/guides/the-basis" class="button">Quick Start Guide</a>
+          </div>
+          <div class="col-md-3 text-center">
+            <a href="https://github.com/vein-lang/vein/releases" class="button">Download</a>
+          </div>
+            <div class="col-md-3"></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="text-center">
+        <a href="https://github.com/vein-lang/vein"><i class="fa fa-github-square"></i></a>
+      </p>
+      <p class="text-center text-muted"><small>© Vein Lang 2020–2021</small></p>
+      <p class="text-center text-muted"><small>﹡- most of the functionality is currently not available because it is in early development.</small></p>
+    </footer>
+  
+  
+    
+  
+  </body></html>
